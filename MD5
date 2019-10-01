@@ -1,0 +1,16 @@
+7d6bab5820ea2e87744029ac243baeac *DESCRIPTION
+e98aba73c141d4ebdc5921851588703f *NAMESPACE
+15ed1f83f3553ef4338067dc65646c41 *R/KbSkewness.R
+11d27b1081fa1aec2e34ff5805e8492e *R/kbData.R
+dac67e998fcde7aad3e93422ebe958ed *data/Chatterjee.RData
+7bbce25e0cf94e7e6399b1315766e073 *data/OlymWomen.RData
+155fa81181cb175f18ace0db4e815cf8 *data/SwissHead.RData
+9abd8ccadc064cbb672876fca25a6685 *man/BowleySkew.Rd
+2363e8cbde58479dc7360a97db2c514e *man/MardiaMvtSkew.Rd
+77d0c9eac1fb8e42cf5e49774eaa2d8e *man/PearsonSkew.Rd
+b3789974f42cc6cc94fc4b1a289532c2 *man/data-Chatterjee.Rd
+94c6603a8be8ed4538c6450c8b9dc15d *man/data-OlymWomen.Rd
+1f8a7941ce10d6b6d1a0a654d142129d *man/data-SwissHead.Rd
+26550972dcf0a82ee9306007df80bf30 *man/kbMvtSkew.Rd
+f7d583ca03d1b6a2790f1dd82d03300b *man/kbSkew.Rd
+0da899eccd00b7529b3c0c6afca780bb *man/pcKbSkew.Rd
