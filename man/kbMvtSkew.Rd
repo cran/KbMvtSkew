@@ -17,13 +17,14 @@ Compute Khattree-Bahuguna's Multivariate Skewness.
 }
 \details{
 Let \eqn{\mathbf{X}=(X_1,\ldots,X_p)'} be the multivariate random vector and \eqn{(X_{i_1}, X_{i_2}, \ldots, X_{i_p})'} be one of the \eqn{p!} permutations of \eqn{(X_1,\ldots,X_p)'}. We predict \eqn{X_{i_j}} conditionally on subvector \eqn{(X_{i_1}, \ldots,X_{i_{j-1}})} and compute the corresponding residual \eqn{V_{i_j}} through a linear regression model for \eqn{j = 2, \cdots, p}. For \eqn{j=1}, we define \eqn{V_{i_1} = X_{i_1} - \bar{X}_{i_1}}, where \eqn{\bar{X}_{i_1}} is the mean of \eqn{X_{i_1}}. For \eqn{j \ge 2}, we have
-\deqn{\hat{X}_{i_2}  = \beta_0 + \beta_1 X_{i_1}, \quad V_{i_2} = X_{i_2} - \hat{X}_{i_2}}
-\deqn{\hat{X}_{i_3} = \beta_0 + \beta_1 X_{i_1} + \beta_2 X_{i_2}, \quad V_{i_3} = X_{i_3} - \hat{X}_{i_3}}
+\deqn{\hat{X}_{i_2}  = \hat{\beta}_0 + \hat{\beta}_1 X_{i_1}, \quad V_{i_2} = X_{i_2} - \hat{X}_{i_2}}
+\deqn{\hat{X}_{i_3} = \hat{\beta}_0 + \hat{\beta}_1 X_{i_1} + \hat{\beta}_2 X_{i_2}, \quad V_{i_3} = X_{i_3} - \hat{X}_{i_3}}
 \deqn{\vdots}
-\deqn{\hat{X}_{i_p} = \beta_0 + \beta_1 X_{i_1} + \beta_2 X_{i_2} + \cdots + \beta_{p-1} X_{i_{p-1}}, \quad V_{i_p} = X_{i_p} - \hat{X}_{i_p}.}
+\deqn{\hat{X}_{i_p} = \hat{\beta}_0 + \hat{\beta}_1 X_{i_1} + \hat{\beta}_2 X_{i_2} + \cdots + \hat{\beta}_{p-1} X_{i_{p-1}}, \quad V_{i_p} = X_{i_p} - \hat{X}_{i_p}.}
 
 We calculate the sample skewness \eqn{\hat{\delta}_{i_j}} of \eqn{V_{i_j}} by the sample Khattree-Bahuguna's univariate skewness formula (see details of \code{\link{kbSkew}} that follows) respectively for \eqn{j=1,\cdots,p} and define \eqn{\hat{\Delta}_{i} = \sum_{j=1}^{p} \hat{\delta}_{i_j}, i = 1, 2, \ldots, P} for all \eqn{P = p!} permutations of \eqn{(X_1,\ldots,X_p)'}. The sample Khattree-Bahuguna's multivariate skewness is defined as
 \deqn{\hat{\Delta} = \frac{1}{P} \sum_{i=1}^{P} \hat{\Delta}_{i}.}
+Clearly, \eqn{0 \le \hat{\Delta} \le \frac{p}{2}}.
 }
 \examples{
 # Compute Khattree-Bahuguna's multivairate skewness

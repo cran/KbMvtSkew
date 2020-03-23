@@ -22,7 +22,7 @@ and
 \deqn{w_ i = \frac{x_{(i)} - x_{(n - i + 1)}}{2}}
 The sample Khattree-Bahuguna's univariate skewness is defined as
 \deqn{\hat{\delta} = \frac{\sum y_i^2}{\sum y_i^2 + \sum w_i^2}.}
-Clearly, \eqn{0 \le \hat{\delta} \le 1}. Values close to zero indicate, low skewness while those close to one indicate the presence of high degree of skewness.
+It can be shown that \eqn{0 \le \hat{\delta} \le \frac{1}{2}}. Values close to zero indicate, low skewness while those close to \eqn{\frac{1}{2}} indicate the presence of high degree of skewness.
 }
 \examples{
 # Compute Khattree-Bahuguna's univariate skewness

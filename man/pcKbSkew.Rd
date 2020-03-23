@@ -20,6 +20,7 @@ Compute Principal-component-based Khattree-Bahuguna's Multivariate Skewness.
 \details{
 Let \eqn{\mathbf{X} = X_1, \ldots, X_p} be a \eqn{p}-dimensional multivariate random vector. We compute the sample skewness for \eqn{p} principal components of \eqn{\mathbf{X}} respectively by the sample Khattree-Bahuguna's univariate skewness formula (see details of \code{\link{kbSkew}} that follows). Let \eqn{\eta_1, \eta_2, \ldots, \eta_p} be the \eqn{p} univariate skewnesses for \eqn{p} principal components. Principal-component-based Khattree-Bahuguna's multivariate skewness for a sample is then defined as
 \deqn{\eta = \sum_{i=1}^{p} \eta_i.}
+Clearly, \eqn{0 \le \eta \le \frac{p}{2}}.
 }
 \examples{
 # Compute principal-component-based Khattree-Bahuguna's multivairate skewness
